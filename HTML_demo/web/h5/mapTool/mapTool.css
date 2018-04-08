@@ -1,0 +1,77 @@
+
+body{
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    font-size: 13px;
+}
+/*头部信息View*/
+.topView{
+
+
+    float: left;
+    height: 120px;
+    width: 100vw;
+}
+/*选择模式*/
+.modelView{
+    background-color: #f8f8f8;
+    float: left;
+    height: 35%;
+    width: 100vw;
+
+}
+/*位置信息*/
+.LocationView{
+
+    background-color: #d9d6c3;
+    float: left;
+    height: 65%;
+    width: 100vw;
+}
+.LocationView_leftView{
+    /*background-color: #d9d6c3;*/
+    float: left;
+    height: 100%;
+    width: 80vw;
+
+}
+.LocationView_RightView{
+    /*background-color: #ddddff;*/
+    font-size: 17px;
+    color: #f05b48;
+    padding-top: 10px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 20vw;
+
+}
+.titleView{
+    float: left;
+    height: 30%;
+    width: 15vw;
+}
+#lnglat{
+    /*background-color: #ddddff;*/
+    float: left;
+    height: 30%;
+    width: 65vw;
+}
+#address{
+    /*background-color: #0099FF;*/
+    float: left;
+    height: 30%;
+    width: 65vw;
+}
+
+
+/*地图*/
+#container{
+
+    float: left;
+    height: calc(100vh - 110px);
+    width: 100vw;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动端一定需要加否则移动端的浏览器会当成PC版的网页,是可以伸缩的.-->
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+
+    <script src="../js/base.js" type="application/javascript" ></script>
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="./equipmentTest.js"></script>
+    <link rel="stylesheet" href="./equipmentTest.css" type="text/css" />
+
+    <title>设备测试</title>
+
+</head>
+<body>
+<h3 class="text-align">设备测试</h3>
+<fieldset>
+    <legend>测试信息</legend>
+    <label>设备号：<input type="text"  placeholder="设备二维码" id="qrcodeInput"/></label> <br />
+    <label>端口号：
+        <select id="selectedOne">
+            <optgroup label="选择端口">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </optgroup>
+        </select>
+
+    </label> <br />
+    <label>时间：<input id="timeInput" placeholder="时间格式，如，10，120,180"></input></label> <br />
+</fieldset>
+
+<div class="button_dev">
+    <button class="button default_button" type="button" id="sureBtn_oneOpen" name="one_open" onclick="test_oneByoneAction(this.name)">选择端口充电</button>
+    <button class="button default_button" type="button" id="sureBtn_oneClose" name="one_close" onclick="test_oneByoneAction(this.name)">选择端口断电</button>
+    <br /><br /><br/><br />
+
+    <button class="button default_button" type="button" id="sureBtn_open"  name="open" onclick="test_allAction(this.name)">一键充电测试</button>
+    <button class="button default_button" type="button" id="sureBtn_close" name="close" onclick="test_allAction(this.name)">一键断电测试</button>
+
+    <br /><br /><br/><br />
+
+    <button class="button default_button" type="button" id="information_btn">设备信息查看</button>
+
+    <button class="button default_button" type="button" id="change_btn">切换生产环境</button>
+</div>
+</body>
+
+</html>

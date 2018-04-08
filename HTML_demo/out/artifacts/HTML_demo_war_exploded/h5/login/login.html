@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--移动端一定需要加否则移动端的浏览器会当成PC版的网页,是可以伸缩的.-->
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+
+    <script src="../js/base.js" type="application/javascript" ></script>
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="./login.js"></script>
+    <link rel="stylesheet" href="./login.css" type="text/css" />
+
+    <title>渠道登陆</title>
+    <style>
+    </style>
+</head>
+
+<body>
+<h3 class="text-align">在线登陆</h3>
+<form>
+    <fieldset>
+        <legend>登陆信息</legend>
+        <label>渠道账号：<input type="number" id="username" placeholder="手机号"/></label> <br />
+        <label class="passwordLable">验证码：<input type="number"  id="password" /></label> <button type="button" id="codeBtn">获取验证码</button> <br />
+    </fieldset>
+
+
+    <div class="button_dev">
+        <button class="button default_button" type="button" id="loginBtn">确认登陆</button>
+    </div>
+</form>
+
+</body>
+</html>

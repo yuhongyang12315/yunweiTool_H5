@@ -1,0 +1,68 @@
+body{
+    height: auto;
+    height: auto;
+    overflow: auto;
+
+}
+.help{
+    color:#fff;
+    background-color: #f05b48 ;
+}
+.details{
+    margin-top: 1.5rem;
+    padding: 1rem;
+
+}
+form{
+    padding: 0 2rem;
+}
+label{
+    display: block;
+}
+fieldset{
+    border: solid 1px #f05b48 ;
+}
+
+input{
+    border: 0px;
+    border-bottom: 1px solid #d9d6c3;
+    height: 1rem;
+}
+.button_dev{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.button{
+    /*text-align: center;*/
+    height: 3rem;
+    font-size: 1.3rem;
+    border:2px solid;
+    border-radius:10px;
+}
+.default_button{
+    color: #fff;
+    background-color: #f05b48 ;
+}
+.text-align{
+    text-align: center;
+    color: #f05b48 ;
+}
+#qrcodeInput{
+
+    width: 70vw;
+}
+.boxBtn{
+    color: #fff;
+    background-color: green;
+    height: 40px;
+    font-size: 1rem;
+    border:2px solid;
+    border-radius:10px;
+width: 40vw;
+    margin-top: 10px;
+}
+.selected{
+
+    background-color: #f05b48;
+}

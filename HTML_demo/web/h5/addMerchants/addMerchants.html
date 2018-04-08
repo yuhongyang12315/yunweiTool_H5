@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<!--移动端一定需要加否则移动端的浏览器会当成PC版的网页,是可以伸缩的.-->
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+
+	<script src="../js/base.js" type="application/javascript" ></script>
+	<!--引入高德api-->
+	<script language="javascript" src="https://webapi.amap.com/maps?v=1.4.0&key=902c6b72eb89513deea02c16c9ec4f04"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="./addMerchants.js"></script>
+	<link rel="stylesheet" href="./addMerchants.css" type="text/css" />
+
+    <title>添加商家</title>
+ <style>
+
+ </style>
+</head>
+<body> 
+	<h3 class="text-align">添加商户信息</h3>
+<form>
+	<fieldset>
+		<legend>*商家信息(必填)</legend>
+	    	<label>商家名称：<input type="text"  id="nameId"/></label> <br />
+	    	<label>登录账号：<input type="number" id="loginId" placeholder="手机号"/></label> <br />
+		<label class="smallFont">商家照片：<input type="file" id="shop_img" /></label>
+		<br />
+
+		<label>分成比例：<input type="number" id="DividedId" />%</label> <br />
+	</fieldset>
+	<fieldset>
+		<legend>商家信息(可选)</legend>
+		<label>账号状态：
+			<select id="select-one">
+			<option value ="1">正常</option>
+			<option value ="2">禁用</option>
+		</select>
+		</label> <br />
+		<label>隐藏设置：
+			<select id="select-two">
+				<option value ="1">隐藏</option>
+				<option value ="0">显示</option>
+			</select>
+		</label> <br />
+		<label>电费承担方：
+			<select id="select-three">
+				<option value ="1">商家</option>
+				<option value ="2">渠道</option>
+			</select>
+		</label> <br />
+
+		<label>电费单价：<input type="number"  id="one-ID"/></label> <br />
+		<label>营业电话：<input type="number" id="two-ID" placeholder="手机号"/></label> <br />
+		<label>商家地址：<input type="text" id="three-ID" /></label> <a href="http://lbs.amap.com/console/show/picker">辅助定位</a><br />
+		<label>商家维度：<input type="number" id="four-ID" /></label> <br />
+		<label>商家经度：<input type="number" id="five-ID" /></label> <br />
+		<label>转账银行：<input type="text" id="sex-ID" /></label> <br />
+		<label>开户银行：<input type="text" id="eight-ID" /></label> <br />
+		<label>银行账号：<input type="number" id="nine-ID" /></label> <br />
+		<label>持卡人姓名：<input type="text" id="ten-ID" /></label> <br />
+		<label>银行预留手机号：<input type="number" id="eleven-ID" /></label> <br />
+
+	</fieldset>
+	<fieldset>
+		<legend>运营配置(可选)</legend>
+		<label>快充价格：<input type="number" id="twelve-ID" />元/10分钟</label> <br />
+		<!--<label>慢充价格：<input type="number" id="thirteen-ID" />小时/元</label> <br />-->
+
+		<div class="one_view">
+		<label class="lab_man">慢充价格：
+		<fieldset class="one_fieldset">
+
+		<label>*1元：<input type="number" id="thirteen-one-ID" />小时(必填)</label> <br />
+		<label>2元：<input type="number" id="thirteen-two-ID" />小时</label> <br />
+		<label>3元：<input type="number" id="thirteen-three-ID" />小时</label> <br />
+			<label>4元：<input type="number" id="thirteen-four-ID" />小时</label> <br />
+			<label>5元：<input type="number" id="thirteen-five-ID" />小时</label> <br />
+			<label>6元：<input type="number" id="thirteen-six-ID" />小时</label> <br />
+			<label>7元：<input type="number" id="thirteen-seven-ID" />小时</label> <br />
+			<label>8元：<input type="number" id="thirteen-eight-ID" />小时</label> <br />
+			<label>9元：<input type="number" id="thirteen-nine-ID" />小时</label> <br />
+	</fieldset></label>
+		</div><br/>
+
+		<br/><label>封顶金额：<input type="number" id="fourteen-ID" />元</label> <br />
+		<label>设备类型：
+			<select id="select-four">
+				<option value ="0">都有</option>
+				<option value ="1">快充</option>
+				<option value ="2">慢充</option>
+			</select>
+		</label> <br />
+	</fieldset>
+<div class="button_dev">
+	<button class="button default_button" type="button" id="sureBtn">确认添加</button>
+</div>
+</form>
+	<div id="map" tabindex="0" ></div>
+<details class="details">
+	<summary class="help">使用帮助</summary>
+	<h4>一、开通帐号</h4>
+	1、需要填写商家的信息与联系人信息 <br/>
+	2、需要填写商家的银行卡相关信息 <br/>
+
+	<h4>二、分配设备 </h4>
+	1、设备需要确认是否转到可用渠道下面 <br/>
+	2、从所属渠道那里把设备转到相应的商家帐号下 <br/>
+	</details>
+
+</body>
+</html>

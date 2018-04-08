@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--移动端一定需要加否则移动端的浏览器会当成PC版的网页,是可以伸缩的.-->
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>拍照打点</title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="./photoUpload.js"></script>
+    <link rel="stylesheet" href="./photoUpload.css" type="text/css" />
+</head>
+
+<!--<fieldset>-->
+    <!--<legend>设备信息</legend>-->
+<!--<form action="https://t2.uma.com/fix/shopdot" method="post"-->
+             <!--enctype="multipart/form-data">-->
+    <!--<p>商家名字:<input type="text" name="shop_name" id="shop_nameInput" value="" placeholder="请输入商家名字"></p>-->
+    <!--<p>商家地址:<input type="text" name="address" id="addressInput" value=""></p>-->
+    <!--<input type="hidden" name="longitude" id="longitude" value="">-->
+    <!--<input type="hidden" name="latitude" id="latitude" value="">-->
+    <!--<p>图片:<input type="file" name="img" id="img"></p>-->
+    <!--<input type="submit" name="submit" id="submitBtn" value="Submit" />-->
+
+<!--</form>-->
+<!--</fieldset>-->
+<body>
+
+<fieldset>
+    <legend>设备信息</legend>
+<form name="formFileData" id="formFileData" enctype="multipart/form-data">
+    <p>商家名字:<input type="text" name="shop_name" id="shop_nameInput-two" value="" placeholder="请输入商家名字"></p>
+    <p>商家地址:<input type="text" name="address" id="addressInput-two"  value=""></p>
+    <p>快充数量:<input type="text" name="k_sum" id="k_sumNumber"  value="" placeholder="请填写整数或不填"></p>
+    <p>慢充数量:<input type="text" name="m_sum" id="m_sumNumber"  value="" placeholder="请填写整数或不填"></p>
+    <input type="hidden" name="longitude" id="longitude-two"  value="">
+    <input type="hidden" name="latitude" id="latitude-two"  value="">
+    <p>图片:<input type="file" name="img" id="img-two" class="img_view"></p>
+    <p><input type="button" name="submitBtn" value="提交"  id="submitBtn-two" onclick="submitFromeAction()" /></p>
+</form>
+</fieldset>
+
+<!--<img id="yasuoimg" src="" width="414" height="736">-->
+<!--<input class="a" type="file">-->
+</body>
+<!--<script>-->
+    <!--$('.a').change(function(e) {-->
+        <!--console.log(this.files[0])-->
+
+        <!--var _URL = window.URL || window.webkitURL;-->
+        <!--var file, img;-->
+        <!--if ((file = this.files[0])) {-->
+                <!--$('.img').attr('src', _URL.createObjectURL(file));-->
+                <!--console.log(this.src)-->
+        <!--}-->
+    <!--})-->
+<!--</script>-->
+
+</html>

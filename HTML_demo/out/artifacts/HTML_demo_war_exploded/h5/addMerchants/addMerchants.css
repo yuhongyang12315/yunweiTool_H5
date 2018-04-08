@@ -1,0 +1,65 @@
+body{
+    height: auto;
+    height: auto;
+    overflow: auto;
+}
+.help{
+    color:#fff;
+    background-color: #f05b48 ;
+}
+.details{
+    margin-top: 1.5rem;
+    padding: 1rem;
+
+}
+form{
+    padding: 0 2rem;
+}
+label{
+    display: block;
+}
+fieldset{
+    border: solid 1px #f05b48 ;
+}
+
+input{
+    border: 0px;
+    border-bottom: 1px solid #d9d6c3;
+    height: 1rem;
+}
+.button_dev{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.button{
+    text-align: center;
+    height: 3rem;
+    font-size: 1.3rem;
+    border:2px solid;
+    border-radius:10px;
+}
+.default_button{
+    color: #fff;
+    background-color: #f05b48 ;
+}
+.text-align{
+    text-align: center;
+    color: #f05b48 ;
+}
+#map{
+
+    height: 0px;
+    width: 0px;
+}
+#shop_img{
+
+    border: 0px;
+    border-bottom: 0px solid #d9d6c3;
+    height: 1rem;
+    width: 50vw;
+}
+.smallFont{
+
+    /*font-size: 10px;*/
+}

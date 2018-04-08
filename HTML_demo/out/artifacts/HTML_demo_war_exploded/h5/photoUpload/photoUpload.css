@@ -1,0 +1,47 @@
+
+body{
+
+
+}
+
+fieldset{
+    border: solid 1px #f05b48 ;
+
+}
+p{
+
+}
+
+#shop_nameInput{
+
+      width: 60vw;
+  }
+#addressInput{
+
+    width: 60vw;
+}
+#submitBtn{
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    width: 170px;
+    background-color: #f05b48;
+    color: #f8f8f8;
+}
+
+#shop_nameInput-two{
+
+    width: 60vw;
+}
+#addressInput-two{
+
+    width: 60vw;
+}
+#submitBtn-two{
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    width: 170px;
+    background-color: #f05b48;
+    color: #f8f8f8;
+}
